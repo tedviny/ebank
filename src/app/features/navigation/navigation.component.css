@@ -1,0 +1,22 @@
+/*** Navigation Component ***/
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.hidden {
+    display: none;
+  }
+
+#hamburger-icon {
+    border: none;
+}
+
+.no-border {
+    border: none;
+} 
+  
+  @media (min-width: 768px) {
+    #desktop-menu {
+      display: flex !important;
+    }
+  }

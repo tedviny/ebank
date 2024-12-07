@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link href="./navigation.component.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex flex-shrink-0 flex items-center">
+          <div class="">
+            <a href="#" class="text-xl font-bold">Brand</a>
+          </div>
+          <div class="hidden" id="desktop-menu">
+            <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+            <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
