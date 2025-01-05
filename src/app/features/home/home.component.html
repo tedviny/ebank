@@ -8,10 +8,10 @@
         <p>Votre solde est de <strong>1511 euros</strong>.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <button class="w-full bg-blue-500 text-white py-4 rounded">Faire un virement</button>
-        <button class="w-full bg-blue-500 text-white py-4 rounded">Afficher les dernières opérations</button>
-        <button class="w-full bg-blue-500 text-white py-4 rounded">Épargne</button>
-        <button class="w-full bg-blue-500 text-white py-4 rounded">Crédit</button>
+        <button class="w-full bg-blue-500 text-white py-4 rounded" (click)="onTransferClick()">Faire un virement</button>
+        <button class="w-full bg-blue-500 text-white py-4 rounded" (click)="onTransactionsClick()">Afficher les dernières opérations</button>
+        <button class="w-full bg-blue-500 text-white py-4 rounded" (click)="onSavingsClick()">Épargne</button>
+        <button class="w-full bg-blue-500 text-white py-4 rounded" (click)="onCreditClick()">Crédit</button>
       </div>
     </div>
   </div>

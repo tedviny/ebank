@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  onTransferClick() {
+    console.log('Faire un virement clicked');
+  }
+
+  onTransactionsClick() {
+    console.log('Afficher les dernières opérations clicked');
+  }
+
+  onSavingsClick() {
+    console.log('Épargne clicked');
+  }
+
+  onCreditClick() {
+    console.log('Crédit clicked');
+  }
+
 }

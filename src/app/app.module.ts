@@ -7,11 +7,15 @@ import { FeaturesModule } from './features/features.module';
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './guards/auth.guard';
+import { HttpClientModule } from '@angular/common/http';
+import { ProtectedComponent } from './components/protected/components/protected/protected.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ProtectedComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,8 +24,9 @@ import { LoginComponent } from './login/login.component';
     FeaturesModule,
     SharedModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
