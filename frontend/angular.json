@@ -7,28 +7,28 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "../frontend",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "styles": [
-              "src/assets/styles/styles.css"
+              "assets/styles/styles.css"
             ],
             "outputPath": "dist/project",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "../frontend/index.html",
+            "main": "main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "favicon.ico",
+              "assets"
             ],
             "scripts": [
-              "src/assets/scripts/scripts.js"
+              "assets/scripts/scripts.js"
             ]
           },
           "configurations": {
@@ -88,14 +88,14 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "frontend/favicon.ico",
+              "assets"
             ],
             "styles": [
-              "src/assets/styles/styles.css"
+              "assets/styles/styles.css"
             ],
             "scripts": [
-              "src/assets/scripts/scripts.js"
+              "assets/scripts/scripts.js"
             ]
             
           }
