@@ -24,8 +24,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "favicon.ico",
-              "assets"
+              "../frontend/favicon.ico",
+              "../frontend/assets"
             ],
             "scripts": [
               "assets/scripts/scripts.js"
