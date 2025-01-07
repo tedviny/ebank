@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-    origin: 'http://127.0.0.1:4000',
+    origin: 'http://frontend:4000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
