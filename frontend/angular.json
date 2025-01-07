@@ -17,7 +17,7 @@
               "assets/styles/styles.css"
             ],
             "outputPath": "dist/project",
-            "index": "../frontend/index.html",
+            "index": "index.html",
             "main": "main.ts",
             "polyfills": [
               "zone.js"
