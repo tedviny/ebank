@@ -6,29 +6,26 @@
     "project": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
-      "sourceRoot": "../frontend",
+      "root": "src",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "styles": [
-              "assets/styles/styles.css"
-            ],
-            "outputPath": "dist/project",
+            "outputPath": "dist/frontend",
             "index": "index.html",
             "main": "main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": "polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "../frontend/favicon.ico",
-              "../frontend/assets"
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/styles/styles.css"
             ],
             "scripts": [
-              "assets/scripts/scripts.js"
+              "src/assets/scripts/scripts.js"
             ]
           },
           "configurations": {
@@ -70,7 +67,8 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4000
+            "port": 4000,
+            "proxyConfig": "proxy.conf.json"
           }
         },
         "extract-i18n": {
@@ -88,16 +86,14 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "favicon.ico",
-              "assets"
+              "src/assets"
             ],
             "styles": [
-              "assets/styles/styles.css"
+              "src/assets/styles/styles.css"
             ],
             "scripts": [
-              "assets/scripts/scripts.js"
+              "src/assets/scripts/scripts.js"
             ]
-            
           }
         }
       }

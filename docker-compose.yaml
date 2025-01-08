@@ -7,8 +7,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
+    networks:
+      - webnet
     environment:
       - NODE_ENV=development
+      - FRONTEND_URL=http://frontend:4000
 
   frontend:
     build:
@@ -16,7 +19,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
+    networks:
+      - webnet
     environment:
       - NODE_ENV=development
+      - BACKEND_URL=http://backend:5000
     depends_on:
       - backend
+networks:
+  webnet:
+    driver: bridge
