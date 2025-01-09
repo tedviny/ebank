@@ -19,7 +19,7 @@ const login = (req, res) => {
   }
 
 
-  const token = jwt.sign({ clientId: user.clientId }, 'your_jwt_secret', { expiresIn: '30s' });
+  const token = jwt.sign({ clientId: user.clientId }, 'your_jwt_secret', { expiresIn: '1m' });
   res.json({ token });
 };
 
