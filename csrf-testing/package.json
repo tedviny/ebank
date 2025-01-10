@@ -1,0 +1,14 @@
+{
+  "name": "csrf-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-localstorage": "^2.1.6"
+  }
+}

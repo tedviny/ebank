@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './features/home/home.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ProtectedComponent } from './components/protected/components/protected/protected.component';
+import { CsrfTestComponent } from './components/csrf-test/csrf-test.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'navigation', component: NavigationComponent },
+  { path: 'csrf-test', component: CsrfTestComponent },
+  { path: '', redirectTo: '/csrf-test', pathMatch: 'full' }
 
 
 

