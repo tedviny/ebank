@@ -10,12 +10,14 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { HttpClientModule } from '@angular/common/http';
 import { ProtectedComponent } from './components/protected/components/protected/protected.component';
+import { CsrfTestComponent } from './components/csrf-test/csrf-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProtectedComponent,
+    CsrfTestComponent,
   ],
   imports: [
     BrowserModule,

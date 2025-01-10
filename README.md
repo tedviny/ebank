@@ -6,7 +6,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Project](#running-the-project)
-- [XSS Vulnerability](#xss-vulnerability)
+- [CSRF Vulnerability](#xss-vulnerability)
   - [Exploiting the Vulnerability](#exploiting-the-vulnerability)
   - [Correcting the Vulnerability](#correcting-the-vulnerability)
 
@@ -44,9 +44,9 @@ Before you begin, ensure you have the following installed on your machine:
 1. Run frontend app and backend app in two separates terminals: with command `npm start` in each package.json location.
 2. Open web browser to `http://localhost:4000/`. The application will automatically reload if you change any of the source files.
 
-## XSS Vulnerability
+## CSRF Vulnerability
 
-This project deliberately contains a Cross-Site Scripting (XSS) vulnerability. The vulnerability is introduced in the login form to demonstrate how an attacker can exploit it and how it can be corrected.
+This project deliberately contains a Cross-Site Request Forgery (XSS) vulnerability. The vulnerability is introduced in the login form to demonstrate how an attacker can exploit it and how it can be corrected.
 
 ### Exploiting the Vulnerability
 
